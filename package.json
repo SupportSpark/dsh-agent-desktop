@@ -1,0 +1,32 @@
+{
+  "name": "dsh-agent-desktop",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: drive desktop apps through the OS accessibility tree via vercel-labs/agent-desktop",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "computer-use",
+    "accessibility",
+    "desktop-automation"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.0.1-rc <2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
